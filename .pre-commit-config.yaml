@@ -1,0 +1,29 @@
+default_stages: [commit]
+repos:
+  - repo: local
+    hooks:
+      - id: black
+        name: black
+        entry: black --check .
+        language: system
+        pass_filenames: false
+      - id: isort
+        name: isort
+        entry: isort --check .
+        language: system
+        pass_filenames: false
+      # - id: ruff
+      #   name: ruff
+      #   entry: ruff .
+      #   language: system
+      #   pass_filenames: false
+      - id: mypy
+        name: mypy
+        entry: mypy .
+        language: system
+        pass_filenames: false
+      - id: pytest
+        name: pytest
+        entry: pytest -s
+        language: system
+        pass_filenames: false

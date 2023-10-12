@@ -1,0 +1,3 @@
+pandas~=2.1
+polars~=0.19
+icecream~=2.1
