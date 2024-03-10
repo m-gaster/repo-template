@@ -1,22 +1,17 @@
 {
-    "python.defaultInterpreterPath": "venv/bin/python",
-    "python.terminal.activateEnvironment": true,
-    // "python.linting.flake8Enabled": true,
-    "python.formatting.provider": "black",
-    "isort.args": [
-        "--profile",
-        "black"
-    ],
-    "[python]": {
-        "editor.codeActionsOnSave": {
-            "source.organizeImports": true,
-            "source.fixAll": true
-        },
-        "editor.formatOnSave": true
+  "python.defaultInterpreterPath": ".venv/bin/python",
+  "python.terminal.activateEnvironment": true,
+  // "python.linting.flake8Enabled": true,
+  "python.formatting.provider": "black",
+  "isort.args": ["--profile", "black"],
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit",
+      "source.fixAll": "explicit"
     },
-    "isort.path": [
-        "isort"
-    ],
-    "python.analysis.autoImportCompletions": true,
-    "python.linting.mypyEnabled": true,
+    "editor.formatOnSave": true
+  },
+  "isort.path": ["isort"],
+  "python.analysis.autoImportCompletions": true,
+  "python.linting.mypyEnabled": true
 }
