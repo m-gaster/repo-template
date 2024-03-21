@@ -14,7 +14,7 @@ repos:
         pass_filenames: false
       - id: ruff
         name: ruff
-        entry: ruff .
+        entry: ruff check .
         language: system
         pass_filenames: false
       - id: mypy
