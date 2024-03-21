@@ -19,7 +19,7 @@ repos:
         pass_filenames: false
       - id: mypy
         name: mypy
-        entry: mypy .
+        entry: mypy --explicit-package-bases .
         language: system
         pass_filenames: false
       - id: pytest
