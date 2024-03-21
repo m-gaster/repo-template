@@ -4,7 +4,6 @@ from typing import Callable
 
 import loguru
 import pandas as pd
-from icecream import ic
 
 
 def format_log_message(
