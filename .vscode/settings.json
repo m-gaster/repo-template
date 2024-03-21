@@ -1,7 +1,6 @@
 {
   "python.defaultInterpreterPath": ".venv/bin/python",
   "python.terminal.activateEnvironment": true,
-  // "python.linting.flake8Enabled": true,
   "mypy.runUsingActiveInterpreter": true,
   "python.formatting.provider": "black",
   "isort.args": ["--profile", "black"],
@@ -13,6 +12,5 @@
     "editor.formatOnSave": true
   },
   "isort.path": ["isort"],
-  "python.analysis.autoImportCompletions": true,
-  "python.linting.mypyEnabled": true
+  "python.analysis.autoImportCompletions": true
 }

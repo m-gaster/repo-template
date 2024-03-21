@@ -14,7 +14,6 @@ pythonpath = "."
 filterwarnings = ["ignore:::DtypeWarning"]
 
 [tool.ruff]
-# per-file-ignores = { "src/try_openai_api.py" = ["E501"] }
 line-length = 140
 ignore = ["E203", "E266"] #, "E501"]
 unfixable = ["F841", "F401", "E731"]
@@ -27,3 +26,10 @@ exclude = [
     "*.ipynb",
     "*.ini",
 ]
+
+[tool.vulture]
+exclude = [".venv/"]
+make_whitelist = true
+min_confidence = 80
+sort_by_size = true
+verbose = false

@@ -12,11 +12,11 @@ repos:
         entry: isort --check .
         language: system
         pass_filenames: false
-      # - id: ruff
-      #   name: ruff
-      #   entry: ruff .
-      #   language: system
-      #   pass_filenames: false
+      - id: ruff
+        name: ruff
+        entry: ruff .
+        language: system
+        pass_filenames: false
       - id: mypy
         name: mypy
         entry: mypy .
@@ -25,5 +25,10 @@ repos:
       - id: pytest
         name: pytest
         entry: pytest -s
+        language: system
+        pass_filenames: false
+      - id: vulture
+        name: vulture
+        entry: vulture .
         language: system
         pass_filenames: false
