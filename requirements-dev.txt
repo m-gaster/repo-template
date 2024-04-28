@@ -4,5 +4,5 @@ isort~=5.12
 mypy~=1.2
 pre-commit
 pytest~=7.3
-vulture==2.11
+interrogate==1.7.0
 loguru==0.7.2

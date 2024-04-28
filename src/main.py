@@ -5,6 +5,7 @@ from loguru import logger
 LOG_PATH: Path = Path("logs/main.py")
 
 if __name__ == "__main__":
+    """."""
     logger.add(
         LOG_PATH,
         format="{time:YYYY-MM-DD - HH:mm!UTC} {level} {message}",
