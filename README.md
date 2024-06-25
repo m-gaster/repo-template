@@ -1,21 +1,43 @@
-# Setup
+# Template Project
 
-# 1. create and activate virtualenv
+This is a template project set up with Poetry.
 
-```sh
-python -m venv .venv
-source .venv/bin/activate
-# `source venv/Scripts/activate` for windows; you may have to run "Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine" in PowerShell as admin first (due to Windows security policy)
-```
+## Instructions
 
-# 2. install dependencies
+1. **Clone this project** (or a project that used this as a template):
 
-```sh
-pip install -r requirements-dev.txt -r requirements.txt
-```
+2. **Install Poetry** if you haven't already. You can do this by running either:
+    ```bash
+    curl -sSL https://install.python-poetry.org | python3 -
+    ```
+    or
+    ```bash
+    pip install poetry
+    # or
+    pip3 install poetry
+    ```
 
-# 3. install pre-commit hooks
+3. **Navigate to this repository in a terminal**:
 
-```sh
-pre-commit install
-```
+4. **Rename the `src/template` directory to your desired package name**:
+
+5. **Update the `pyproject.toml` file**:
+    - Update the authors, description, etc.
+    - Change the `name` field under `[tool.poetry]` to your project name.
+    - Update the `packages` section to reflect the new package name. For example, if you rename `template` to `my_project`, update it as follows:
+    ```toml
+    packages = [
+        { include = "my_project", from = "src" }
+    ]
+    ```
+
+6. **Create and activate a virtual environment** (optional; poetry will ):
+    ```bash
+    python3 -m venv .venv
+    source .venv/bin/activate
+    ```
+
+6. **Run `poetry install` to install the dependencies**:
+    ```bash
+    poetry install --sync
+    ```

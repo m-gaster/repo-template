@@ -1,8 +1,0 @@
-black==23.3
-ruff~=0.0
-isort~=5.12
-mypy~=1.2
-pre-commit
-pytest~=7.3
-interrogate==1.7.0
-loguru==0.7.2
