@@ -31,7 +31,7 @@ This is a template project set up with Poetry.
     ]
     ```
 
-6. **Create and activate a virtual environment** (optional; poetry will ):
+6. **Create and activate a virtual environment** (optional; poetry will use a pre-existing environment if allowed & possible):
     ```bash
     python3 -m venv .venv
     source .venv/bin/activate
