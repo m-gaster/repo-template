@@ -38,6 +38,9 @@ description = "Python data repo template"
 authors = ["Mikhael Gaster <mikhaelgaster@gmail.com>"]
 license = "MIT"
 readme = "README.md"
+packages = [
+    { include = "template", from = "src" } 
+]
 
 [tool.poetry.dependencies]
 python = "^3.12"

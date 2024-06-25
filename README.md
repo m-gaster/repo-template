@@ -6,7 +6,7 @@ This is a template project set up with Poetry.
 
 1. **Clone this project** (or a project that used this as a template):
 
-2. **Install Poetry** (if you haven't already). You can do this by running either:
+2. **Install Poetry** if you haven't already. You can do this by running either:
     ```bash
     curl -sSL https://install.python-poetry.org | python3 -
     ```
@@ -22,6 +22,7 @@ This is a template project set up with Poetry.
 4. **Rename the `src/template` directory to your desired package name**:
 
 5. **Update the `pyproject.toml` file**:
+    - Update the authors, description, etc.
     - Change the `name` field under `[tool.poetry]` to your project name.
     - Update the `packages` section to reflect the new package name. For example, if you rename `template` to `my_project`, update it as follows:
     ```toml
@@ -30,7 +31,13 @@ This is a template project set up with Poetry.
     ]
     ```
 
+6. **Create and activate a virtual environment** (optional; poetry will ):
+    ```bash
+    python3 -m venv .venv
+    source .venv/bin/activate
+    ```
+
 6. **Run `poetry install` to install the dependencies**:
     ```bash
-    poetry install
+    poetry install --sync
     ```
