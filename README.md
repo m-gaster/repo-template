@@ -2,7 +2,7 @@
 
 This is a template project set up with Poetry.
 
-## Instructions
+## Instructions (remove this after setup)
 
 1. **Clone this project** (or a project that used this as a template):
 
@@ -40,4 +40,40 @@ This is a template project set up with Poetry.
 6. **Run `poetry install` to install the dependencies**:
     ```bash
     poetry install --sync
+    ```
+
+***
+
+# Your readme
+
+
+## Setup Instructions
+1. **Clone this project** (or a project that used this as a template):
+
+2. **Install Poetry** if you haven't already. You can do this by running either:
+    ```bash
+    curl -sSL https://install.python-poetry.org | python3 -
+    ```
+    or
+    ```bash
+    pip install poetry
+    # or
+    pip3 install poetry
+    ```
+
+3. **Navigate to this repository in a terminal**:
+
+4. **Create and activate a virtual environment** (optional; poetry will ):
+    ```bash
+    python3 -m venv .venv
+    source .venv/bin/activate
+    ```
+
+6. **Run `poetry install` to install the dependencies**:
+    ```bash
+    poetry install --sync
+    ```
+
+7. **Run _________________**:
+    ```bash
     ```
