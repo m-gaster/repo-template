@@ -27,8 +27,3 @@ repos:
       #   entry: pytest -s
       #   language: system
       #   pass_filenames: false
-      - id: interrogate
-        name: interrogate
-        entry: interrogate .
-        language: system
-        pass_filenames: false
